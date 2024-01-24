@@ -5,6 +5,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Devoir_Cookie.Controllers
 {
+    [ApiController]
+    [Route("api/[controller]/[action]")]
     public class AccountController : Controller
     {
         UserManager<IdentityUser> _userManager;
